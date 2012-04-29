@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <HBox id="hBox1" alignment="CENTER" prefHeight="357.0" prefWidth="352.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="29.0">
+      <children>
+        <AnchorPane id="anchorPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="310.0" styleClass="background, roundedButton">
+          <children>
+            <VBox id="vBox1" prefHeight="200.0" prefWidth="310.0" spacing="5.0" styleClass="top-segment" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <ImageView id="logo">
+                  <effect>
+                    <DropShadow color="#646464" offsetX="5.0" offsetY="5.0">
+                      <input>
+                        <Bloom />
+                      </input>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@logo.png" preserveRatio="true" smooth="true" />
+                  </image>
+                </ImageView>
+                <Label id="label1" text="Username">
+                  <effect>
+                    <Glow>
+                      <input>
+                        <DropShadow blurType="ONE_PASS_BOX" height="1.0" offsetY="1.0" radius="0.0" width="1.0">
+                          <color>
+                            <Color blue="0.000" green="0.000" opacity="0.600" red="0.000" fx:id="x1" />
+                          </color>
+                        </DropShadow>
+                      </input>
+                    </Glow>
+                  </effect>
+                  <VBox.margin>
+                    <Insets left="10.0" fx:id="x2" />
+                  </VBox.margin>
+                </Label>
+                <TextField id="textField1" prefWidth="200.0" promptText="Username">
+                  <VBox.margin>
+                    <Insets left="10.0" right="10.0" />
+                  </VBox.margin>
+                </TextField>
+                <Label id="label2" text="Password" VBox.margin="$x2">
+                  <effect>
+                    <Glow>
+                      <input>
+                        <DropShadow blurType="ONE_PASS_BOX" color="$x1" height="1.0" offsetY="1.0" radius="0.0" width="1.0" />
+                      </input>
+                    </Glow>
+                  </effect>
+                </Label>
+                <PasswordField id="passwordField1" prefWidth="200.0" promptText="Password">
+                  <VBox.margin>
+                    <Insets bottom="5.0" left="10.0" right="10.0" />
+                  </VBox.margin>
+                </PasswordField>
+              </children>
+            </VBox>
+            <VBox id="vBox2" layoutY="200.0" prefHeight="122.0" prefWidth="310.0">
+              <children>
+                <Label id="label3" prefHeight="17.0" prefWidth="306.0" />
+                <Button id="button1" contentDisplay="CENTER" prefHeight="50.0" prefWidth="258.0" text="Login" textAlignment="CENTER">
+                  <VBox.margin>
+                    <Insets left="30.0" right="10.0" top="20.0" />
+                  </VBox.margin>
+                </Button>
+              </children>
+            </VBox>
+          </children>
+          <effect>
+            <InnerShadow />
+          </effect>
+        </AnchorPane>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+  <properties>
+    <backgroundColor>
+      <Color blue="0.000" green="0.000" red="0.000" />
+    </backgroundColor>
+  </properties>
+</AnchorPane>
