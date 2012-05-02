@@ -1,10 +1,7 @@
 package clock;
 
 
-/**
- * Copyright (c) 2008, 2012 Oracle and/or its affiliates. All rights reserved.
- * Use is subject to license terms.
- */
+
 import java.util.Calendar;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
